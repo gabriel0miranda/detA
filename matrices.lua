@@ -35,4 +35,7 @@ function matrices:getM()
   return self.M
 end
 
+function matrices:permutations()
+end
+
 return matrices
