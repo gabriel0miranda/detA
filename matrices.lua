@@ -18,7 +18,6 @@ function matrices:create()
 end
 
 function matrices:print()
-  io.write("Printing randomly generated matrix:\n")
   for i=1,self.N do
     for j=1,self.M do
       io.write(self.mt[i*self.M + j], " ")
@@ -33,6 +32,10 @@ end
 
 function matrices:getM()
   return self.M
+end
+
+function matrices:getValue(n,m)
+  return self.mt[n*self.M + m]
 end
 
 function matrices:permutations()
