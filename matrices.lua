@@ -7,7 +7,7 @@ local matrices = {
 function matrices:create()
   math.randomseed(os.time())
 
-  self.N = math.random(2,10)
+  self.N = 10 --math.random(2,10)
   self.M = self.N
 
   for i=1,self.N do
