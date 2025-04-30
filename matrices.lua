@@ -7,12 +7,12 @@ local matrices = {
 function matrices:create()
   math.randomseed(os.time())
 
-  self.N = math.random(10)
+  self.N = math.random(2,10)
   self.M = self.N
 
   for i=1,self.N do
     for j=1,self.M do
-      self.mt[i*self.M + j] = math.random(100)
+      self.mt[i*self.M + j] = math.random(-10,10)
     end
   end
 end

@@ -68,6 +68,9 @@ for l in perm(p) do
     for k=1, matrix:getN() do
       subResult = subResult * matrix:getValue(k,l[k])
       --print("SUBRESULT:"..subResult)
+      if subResult == 0 then
+        break
+      end
     end
     detA = detA + inversoes(l)*subResult
     --print("DetA:"..detA)
